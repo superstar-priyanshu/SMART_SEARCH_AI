@@ -63,7 +63,7 @@ const handleSubmit = async (e) => {
     const messageDiv = document.getElementById(uniqueid);
     laoder(messageDiv);
     
-    const response = await fetch('http://localhost:2000', {
+    const response = await fetch('https://smartsearch-noe8.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt: data.get('prompt') })
